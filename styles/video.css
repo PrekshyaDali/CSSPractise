@@ -36,7 +36,7 @@
   }
 
   .profile-picture {
-    width: 100%;
+    width: 36px;
     border-radius: 50px;
   }
 
@@ -52,11 +52,12 @@
     color: rgb(123, 121, 121);
     margin-top: 5px;
   }
+
   .video-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr fr;
     column-gap: 15px;
     row-gap: 40px;
-    background-color: #f9f9f9;
+    
   }

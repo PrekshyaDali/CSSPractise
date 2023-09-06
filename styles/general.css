@@ -8,7 +8,10 @@ p {
     height: 3000px;
     padding-top: 70px;
     margin:0;
-    padding-left: 80px;
+    padding-left: 96px;
+    padding-right: 24px;
+    background-color: #f9f9f9;
   
   
   }
+
