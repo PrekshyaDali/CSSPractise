@@ -8,15 +8,11 @@
   right: 0;
   left: 0;
   background-color: white;
-  border-bottom-width:  1px;
+  border-bottom-width: 1px;
   border-bottom-color: rgb(207, 207, 207);
   border-bottom-style: solid;
   z-index: 100;
-
-
-  
 }
-
 
 .left-section {
   display: flex;
@@ -68,9 +64,43 @@
   border-radius: 2px;
   margin-right: 20px;
   margin-left: -1px;
+  /* display: flex;
+  justify-content: center; */
+  position: relative;
+}
+
+.search-button,
+.mike-button {
+  position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
+
+.search-button .tooltip,
+.mike-button .tooltip {
+  position: absolute;
+  border: none;
+  border-width: 1px;
+  border-style: solid;
+  background-color: gray;
+  color: white;
+  border-radius: 3px;
+  padding: 8px;
+  font-size: 12px;
+  bottom: -35px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.search-button:hover .tooltip,
+.mike-button:hover .tooltip {
+  opacity: 1;
+  
+}
+
 .mike-button {
   height: 40px;
   width: 40px;
@@ -80,12 +110,13 @@
   border: none;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .search-icon {
   height: 25px;
   width: 40px;
-  margin-top: 4px;
+  
 }
 
 .voice-icon {
@@ -94,11 +125,11 @@
 }
 
 .right-section {
-  margin-right: 20px;;
+  margin-right: 20px;
   width: 200px;
   display: flex;
   flex-shrink: 0;
-  
+
   justify-content: space-between;
   align-items: center;
   padding: 10px;
@@ -120,35 +151,26 @@
   margin-right: 4px;
 }
 
-.notification{
-  position:relative;
-
-
-
-  
+.notification {
+  position: relative;
 }
 
-.notification-number{
-  position:absolute;
-  top:0px;
-  right:8px;
+.notification-number {
+  position: absolute;
+  top: 0px;
+  right: 8px;
   background-color: rgb(189, 5, 5);
-  color:white;
+  color: white;
   font-size: 12px;
   padding-left: 5px;
   padding-right: 5px;
   padding-top: 1px;
   padding-bottom: 1px;
- border-radius: 10px;
-
-
-
+  border-radius: 10px;
 }
-
 
 .my-channel-icon {
   height: 32px;
   border: none;
   border-radius: 16px;
-
 }
