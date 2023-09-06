@@ -3,7 +3,21 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: fixed;
+  top: 0px;
+  right: 0;
+  left: 0;
+  background-color: white;
+  border-bottom-width:  1px;
+  border-bottom-color: rgb(243, 243, 243);
+  border-bottom-style: solid;
+  z-index: 100;
+
+
+  
 }
+
+
 .left-section {
   display: flex;
   align-items: center;
@@ -99,10 +113,39 @@
   height: 24px;
   width: 40px;
 }
+
 .notification-icon {
   height: 24px;
   width: 40px;
+  margin-right: 4px;
 }
+
+.notification{
+  position:relative;
+
+
+
+  
+}
+
+.notification-number{
+  position:absolute;
+  top:0px;
+  right:8px;
+  background-color: rgb(189, 5, 5);
+  color:white;
+  font-size: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+ border-radius: 10px;
+
+
+
+}
+
+
 .my-channel-icon {
   height: 32px;
   border: none;
